@@ -1,0 +1,545 @@
+.Portfolio
+{
+    /* border: 2px solid blue; */
+    height: 100%;
+    
+   
+}
+#projectHeading
+{
+    font-family: sans-serif;
+    font-size: 20px;
+     text-align: center;
+    margin: 80px auto;
+    color: #4e5053;
+    width: 500px;
+    user-select: none;
+}
+
+
+.hidden1
+{
+    opacity: 0;
+    transform: translateX(40%);
+    transition: all 1s;
+}
+.headingAni
+{
+    opacity: 1;
+    transform: translate(0%);
+    transition: all 1s;
+}
+
+/* GridNAVIGATION */
+.GridNav
+{
+    display: flex;
+    margin:  auto;
+    /* border: 2px solid green; */
+    width: 40%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.NavButtons
+{
+    margin: auto;
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4e5053;
+    font-weight: 550;
+    font-size: large;
+    font-family: sans-serif;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.slider
+{
+    background-color: #C7006B;
+    position: absolute;
+    width: 175px;
+    height: 30px;
+    transition: all 0.3s;
+    z-index: -1;
+    
+}
+.slider1
+{
+    transform: translateX(100%);
+    transition: all 0.3s;
+    background-color: #C7006B;
+    position: absolute;
+    z-index: -1;
+    width: 175px;
+    height: 30px;
+}
+
+.slider2
+{
+    transform: translateX(200%);
+    transition: all 0.3s;
+    background-color: #C7006B;
+    position: absolute;
+    z-index: -1;
+    width: 175px;
+    height: 30px;
+}
+.slider3
+{
+    transform: translateX(300%);
+    transition: all 0.3s;
+    background-color: #C7006B;
+    position: absolute;
+    z-index: -1;
+    width: 175px;
+    height: 30px;
+}
+
+
+/* GridCONTAINER */
+
+.projectGridContainer
+{
+    /* border: 2px solid red; */
+  
+    width: 75%;
+    height: auto;
+    margin: auto;
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    user-select: none;
+    
+}
+.projectGrid
+{
+    /* border: 2px solid blue; */
+    position: relative;
+    top: 300px;
+    height: 270px ;
+    width: 30%;
+    opacity: 0;
+  
+   
+}
+
+
+
+
+
+
+.projectGrid:nth-child(1)
+{
+   animation: example 1s forwards ;
+   position: relative;
+  
+}
+.projectGrid:nth-child(2)
+{
+   animation: example 1s forwards ;
+   animation-delay:0.1s ;
+   position: relative;
+}
+.projectGrid:nth-child(3)
+{
+   animation: example 1s forwards;
+   animation-delay:0.2s ;
+   position: relative;
+}
+.projectGrid:nth-child(4)
+{
+   animation: example 1s forwards ;
+   animation-delay:0.3s ;
+   position: relative;
+}
+.projectGrid:nth-child(5)
+{
+   animation: example 1s forwards ;
+   animation-delay:0.4s ;
+   position: relative;
+}
+.projectGrid:nth-child(6)
+{
+   animation: example 1s forwards ;
+   animation-delay:0.5s ;
+   position: relative;
+}
+.projectGrid:nth-child(7)
+{
+   animation: example 1s forwards;
+   animation-delay:0.6s ;
+   position: relative;
+}
+.projectGrid:nth-child(8)
+{
+   animation: example 1s forwards;
+   animation-delay:0.7s ;
+   position: relative;
+}
+.projectGrid:nth-child(9)
+{
+   animation: example 1s forwards ;
+   animation-delay:0.8s ;
+   position: relative;
+}
+
+@keyframes example {
+    0%{ transform: translateY(0px); opacity: 0;}
+    
+    100%{transform: translateY(-300px); opacity: 1;}
+}
+
+
+/* .projectGridhide
+{
+    border: 2px solid blue;
+   
+    position: relative;
+    top: 0px;
+    height: 270px ;
+    width: 30%;
+    opacity: 1;
+}
+
+
+.projectGridhide:nth-child(1)
+{
+   animation: example1 1s forwards ;
+   position: relative;
+  
+}
+.projectGridhide:nth-child(2)
+{
+   animation: example1 1s forwards ;
+   animation-delay:0.1s ;
+   position: relative;
+}
+.projectGridhide:nth-child(3)
+{
+   animation: example1 1s forwards;
+   animation-delay:0.2s ;
+   position: relative;
+}
+.projectGridhide:nth-child(4)
+{
+   animation: example1 1s forwards ;
+   animation-delay:0.3s ;
+   position: relative;
+}
+.projectGridhide:nth-child(5)
+{
+   animation: example1 1s forwards ;
+   animation-delay:0.4s ;
+   position: relative;
+}
+.projectGridhide:nth-child(6)
+{
+   animation: example1 1s forwards ;
+   animation-delay:0.5s ;
+   position: relative;
+}
+.projectGridhide:nth-child(7)
+{
+   animation: example1 1s forwards;
+   animation-delay:0.6s ;
+   position: relative;
+}
+.projectGridhide:nth-child(8)
+{
+   animation: example1 1s forwards;
+   animation-delay:0.7s ;
+   position: relative;
+}
+.projectGridhide:nth-child(9)
+{
+   animation: example1 1s reverse;
+   animation-delay:0.8s ;
+   position: relative;
+} */
+
+/* @keyframes example1 {
+    0%{left:0px; transform: translateY(-10px); opacity: 1;}
+    
+    100%{left: 0px;transform: translateY(0px); opacity: 0;}
+} */
+
+
+.projectGrid img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.imageCover
+{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.projectGrid:hover img{
+    opacity: 0.1;
+    transition: all 0.5s;
+    
+}
+.imageCover:hover
+{
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.Title
+{
+    text-align: center;
+    margin-top: 0px;
+    color: #4e5053;
+    opacity: 0;
+    font-family: sans-serif;
+    transition: all 0.4s;
+}
+.imageCover:hover .Title
+{
+    margin-top: 50px;
+    transition: all 0.4s;
+    opacity: 1;
+    color: #4e5053;
+    font-family: sans-serif;
+    
+}
+.Title p
+{
+    color: #C7006B;
+}
+
+#buttonBox
+{
+    display: flex;
+    justify-content: center;
+}
+.Button1
+{
+    text-align: center;
+    border: 1px solid #C7006B;
+    background-color:#4e505300;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+   transform: translateY(100px);
+    width: 200px;
+   user-select: none;
+    transition: all 0.4s;
+    color: #4e5053;
+}
+.imageCover:hover .Button1
+{
+    transform: translateY(5px);
+    transition: all 0.4s;
+}
+
+.Button1:hover{
+    background-color: #C7006B;
+    color: white;
+    transition: all 0.2s;
+    border: 1px solid #C7006B;
+    
+}
+
+
+/* MODALEX */
+.closeButton
+{
+    
+    transition: all 1s;
+}
+
+.closeButton:hover
+{
+    
+    box-shadow: 1px 1px 5px 2px rgb(117, 114, 114);
+    border-radius: 30px;
+    
+    transition: all 0.5s;
+}
+.closeButton:active
+{
+    
+    box-shadow: inset 1px 1px 5px 2px rgb(117, 114, 114);
+    border-radius: 30px;
+    
+    transition: all 0.5s;
+}
+
+.NextPrev
+{
+    top:11rem;
+ 
+    height:3rem;
+    background-color:rgba(0, 0, 0, 0.150)
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media screen and (max-width:600px) {
+
+    #portfolio
+    {
+        height: 120rem;
+    }
+.Portfolio
+{
+  width: 100%;
+    height: 100rem;
+    
+}
+
+#projectHeading
+{
+  width: 100%;
+}
+
+.GridNav
+{
+
+    margin:  auto;
+    /* border: 2px solid green; */
+    width: 90%;
+    
+ 
+}
+.NavButtons
+{
+
+    width: 100%;
+    height: 100%;
+    font-weight: 0;
+    font-size:0.7rem;
+ 
+}
+
+
+
+.slider
+{
+    width:25%;
+    height: 100%;
+}
+.slider1
+{
+    
+    width:25%;
+    height: 100%;
+}
+
+.slider2
+{
+   
+    width:25%;
+    height: 100%;
+}
+.slider3
+{
+    width:25%;
+    height: 100%;
+}
+
+.projectGridContainer
+{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+.projectGrid
+{
+    width: 50%;
+    height: 10rem;
+  
+}
+
+
+
+
+.Title
+{
+ 
+  font-size: 0.8rem;
+ 
+}
+.Title h4
+{
+    font-size: 1rem;
+    padding: 1px;
+}
+.imageCover:hover .Title
+{
+    margin-top: 30px;
+   
+    
+}
+.Title p
+{
+    color: #C7006B;
+}
+
+#buttonBox
+{
+
+   display: flex;
+   justify-content: center;
+}
+.Button1
+{
+    font-size:1rem;
+    margin: 0;
+    width:10rem;
+}
+
+/* MODALEX */
+.closeButton
+{
+    
+    transition: all 1s;
+}
+
+.closeButton:hover
+{
+    
+    box-shadow: 1px 1px 5px 2px rgb(117, 114, 114);
+    border-radius: 30px;
+    
+    transition: all 0.5s;
+}
+.closeButton:active
+{
+    
+    box-shadow: inset 1px 1px 5px 2px rgb(117, 114, 114);
+    border-radius: 30px;
+    
+    transition: all 0.5s;
+}
+
+.NextPrev
+{
+    top:11rem;
+ 
+    height:3rem;
+    background-color:rgba(0, 0, 0, 0.150)
+}
+
+}

@@ -1,0 +1,150 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
+
+// Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
+Modal.setAppElement('#home');
+
+
+
+
+
+function Modalex(props) {
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  return (
+    <div>
+      <button onClick={openModal}>Open Modal</button>
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+        <button onClick={closeModal}>close</button>
+        <div>I am a modal</div>
+        <form>
+          <input />
+          <button>tab navigation</button>
+          <button>stays</button>
+          <button>inside</button>
+          <button>the modal</button>
+        </form>
+      </Modal>
+    </div>
+  );
+}
+
+export default Modalex;
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////MODELEX///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+import { useState } from 'react';
+
+import Modal from 'react-bootstrap/Modal';
+import "../Portfolio.css"
+function Modalex(props) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+     <button className='Button1'  onClick={handleShow}>
+        Learn more
+     </button> 
+    
+      <Modal   size='lg'  centered="true" show={show}  onHide={handleClose}>
+        
+     
+
+        <Modal.Body  >
+          
+  
+        <div>
+      
+                  <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={props.image1} className="d-block w-100" alt="..."/>
+              </div>
+              <div className="carousel-item">
+                <img src={props.image2} className="d-block w-100" alt="..."/>
+              </div>
+             
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+
+</div>
+
+      
+
+        <Modal.Title>{props.Title}</Modal.Title>
+    
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum necessitatibus inventore voluptatem ipsam libero odit? Ipsam recusandae minus sint a inventore repudiandae, blanditiis rerum magnam reiciendis maxime necessitatibus nihil esse.</p>
+        </Modal.Body>
+        <Modal.Header  closeButton>
+     
+        </Modal.Header  >
+      </Modal>
+    
+    </>
+  );
+}
+
+export default Modalex;

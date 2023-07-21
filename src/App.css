@@ -1,38 +1,615 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/* BACKGround */
+.area{
+  background: #191b20;  
+  /* background: #191b20; */
+  background: -webkit-linear-gradient(to left, #8f94fb, #d4d4d9);  
+  width: 100%;
+  height:100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+.circles li{
+  position: absolute;
+  
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(77, 255, 255, 0.851);
+  animation: animate 24s linear infinite;
+  bottom: -150px;
+  transition: 0.5s ;
+}
+
+.circles li:hover
+{
+
+  box-shadow: 3px 3px 20px cyan;
+  background-color: rgb(93, 249, 249);
+  transition: 0.5s;
+  
+ 
+}
+
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 23s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+      background-color: #23d8d8;
   }
+  40%{
+    
+    background-color: #42c7c7b3;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+      background-color: #C7006B;
+  }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* HOME */
+
+
+.Home
+{ 
+
   color: white;
+  user-select: none;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  font-size: 45px;
+  font-family: sans-serif;
+  line-height: 40px;
+  
+}
+#name
+{
+  color: #C7006B;
+  font-weight: 600;
+  margin-bottom: 0px;
+ 
+}
+#ViewButton
+{   display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+     margin: auto;
+     margin-top: 20px;
+  border: 1px solid white;
+    width: 200px;
+    height: 50px;
+    background-color: #2629335b;
+    color: white;
+   font-size: 20px;
+   font-weight: 100;
+   font-family: sans-serif;
+  transition: 0.5s;
+}
+#ViewButton:hover
+{
+  background-color: rgba(3, 255, 255, 0.675);
+ 
+  transition: 0.5s;
+  border: 1px solid rgb(248, 248, 248);
+  border-radius: 10px;
+ 
+  cursor: pointer;
+  box-shadow: 1px 1px 15px rgba(3, 255, 255, 0.869);
 }
 
-.App-link {
-  color: #61dafb;
+#arrow
+{  display: flex;
+
+ margin-top: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 12px;
+  transition: all 500ms;
+  
+}
+#ViewButton:hover #arrow 
+{
+  transition: all 500ms;
+  transform: rotate(90deg);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* NAVBAR  */
+.Nav
+{ position: sticky;
+  top: 0;
+  display: flex;
+  color: white;
+  align-items: center;
+  z-index: 1;
+  height: 50px;
+  width: 100%;
+  background-color: #1C242E;
+  box-shadow: 1px 1px 15px rgba(0, 255, 255, 0.6);
+}
+.Nav  div
+{
+  margin: 25px;
+  position: relative;
+  left: 200px;
+  font-family: sans-serif;
+  transition: 0.5s;
+}
+ 
+.Nav div a
+{
+  text-decoration: none;
+  color: white;
+ padding-top: 5px;
+ padding-bottom:8px ;
+
+}
+.Nav  div:hover a
+{ cursor: pointer;
+  color: #C7006B;
+  
+  transition: 0.5s;
+}
+
+
+/* ABOUT */
+
+.About
+{ 
+  width: 100%;
+  height: 950px;
+  background-color: rgb(245, 252, 252);
+ position: relative;
+ user-select: none;
+}
+
+#a1
+{
+   font-family: sans-serif;
+   font-size: 20px;
+    text-align: center;
+   margin: 80px auto;
+   color: #4e5053;
+  
+   
+}
+
+.hidden
+{
+  /* filter: blur(5px); */
+  opacity: 0;
+  transform:  translateX(-30%) ;
+  transition: all 1s ;
+
+}
+
+.show
+{   opacity: 1;
+  /* filter: blur(0px); */
+  transform: translateX(0%) ;
+  transition: all 1s;
+}
+
+.icons
+{
+  display: flex;
+  
+  height: 150px;
+   width: 1200px;
+   margin: 0px auto;
+
+}
+.iconItems
+{  height: 100px;
+  margin: 0px auto;
+  width: 290px;
+  text-align: center;
+  color: #4e5053;
+}
+
+.iconItems:nth-child(1)
+{
+  transition-delay: 100ms;
+}
+.iconItems:nth-child(2)
+{
+  transition-delay: 200ms;
+}
+.iconItems:nth-child(3)
+{
+  transition-delay: 300ms;
+}
+.iconItems:nth-child(4)
+{
+  transition-delay: 400ms;
+}
+
+.picSkill
+{height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic
+{
+  /* border: 2px solid  rgb(64, 61, 61); */
+  height: 500px;
+  width: 650px;
+  display: block;
+  
+}
+
+#p1{
+  display: flex;
+  justify-content: center;
+}
+#p1 img
+{
+  border: 2px solid #42C6C7;
+  
+  border-radius: 100px;
+  margin: 50px auto 10px;
+  height: 250px;
+  width: 250px;
+  
+}
+
+#p2
+{
+  /* border: 2px solid gray; */
+    height: fit-content ;
+    width: 500px;
+    margin: auto;
+    user-select: text;
+}
+
+.hidden1
+{
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-30%);
+}
+
+.show1
+{
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+}
+
+.skill
+{
+  /* border: 2px solid rgb(46, 36, 36); */
+  height: 500px;
+  width: 650px;
+  display:grid;
+  align-content: center;
+}
+
+.progress
+{
+  background-color: #42C6C7;
+  height: 30px ;
+  width: 80%;
+  margin:10px auto ;
+  border-radius: 0px;
+
+}
+
+.progress h6{
+
+  position: absolute;
+  left: 84%;
+  line-height: 25px;
+  justify-content: center;
+  color: #4e5053;
+}
+
+.hidden3
+{
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(30%);
+  
+}
+.show3
+{
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+  
+}
+.progress p
+{
+  
+  margin: auto;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  background-color: #42C6C7;
+  z-index: 1;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+} 
+
+.proSlide
+{
+  
+  background-color:  #35A4A5;  
+  
+
+}
+
+.hidden2
+{
+ 
+  transition: all 1s;
+  transform: translateX(-100%);
+  
+}
+.show2
+{
+  
+  transition: all 1s;
+  transform: translateX(0%);
+  
+}
+
+.proSlide
+{
+  transition-delay: 0.5s;
+}
+
+/* PORTFOLIO */
+#portfolio
+{
+  border: 2px solid rgb(241, 241, 241);
+  background-color: rgb(241, 241, 241);
+  height: 1400px;
+  width: 100%;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media  (max-width:600px) {
+
+  .area{
+ 
+    width: 100%;
+    height:100vh;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .Home
+  {
+    font-size: 1.5rem;
+    line-height: 1rem;
   }
+  .circles{
+    
+    
+    width: 100%;
+    height:100vh;
+  
+   
+  }
+  
+  #ViewButton
+{ scale: 0.8;
+  
+}
+
+
+.Nav
+{
+  width: 100%;
+ 
+}
+
+.Nav div
+{
+ 
+  margin: 0;
+  left: 0;
+  margin: auto;
+}
+.Nav div a 
+{
+ font-size: 1rem;
+}
+
+
+#about
+{
+  
+  height: 120rem;
+}
+.About
+{ 
+  width: 100%;
+  height:100%;
+  
+  display: block;
+
+}
+
+#a1
+{
+  margin: 60px auto 0px;
+  font-size: 1rem;
+}
+
+.icons
+{
+  display: block;
+  width: 100%;
+  height:50rem; 
+  margin-top: -40px;
+  
+}
+.iconItems
+{
+ margin-top:5rem;
+}
+
+.picSkill
+{
+  display: block;
+  height:100%;
+
+}
+.pic
+{
+  margin: auto;
+  width: 100%;
+  height: auto;
+
+}
+#p1{
+  display: flex;
+
+}
+#p2
+{
+  width: 95%;
+ text-align: justify  ;
+  padding:0px 10px;
+
+}
+.skill
+{
+  height: 25rem;
+  width: 100%;
+ 
+}
+
+
+
+.progress
+{
+
+  height: 30px ;
+  width: 80%;
+  margin:10px auto ;
+
+}
+
+.progress h6{
+  left: 81%;
+ 
+}
+
+
+
 }
