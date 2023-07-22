@@ -131,19 +131,28 @@ margin: auto;
 
 @media screen and (max-width:600px) {
 
+    .Contact{
+        width: 100%;
+    }
+    .PptTitle
+{
+   font-size: 2rem;
+}
+
+
     .PptContainer
     {
     margin: auto;
         display: block;
         height:fit-content;
-        width: 70%;
+        width: 100%;
        
        
     }
     
 .PptBox
 {
-    
+     
     width: 18rem;
     height: 100%;
     margin: auto;

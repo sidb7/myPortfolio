@@ -426,12 +426,12 @@
 
     #portfolio
     {
-        height: 120rem;
+        height: 100%;
     }
 .Portfolio
 {
   width: 100%;
-    height: 100rem;
+    height: 100%;
     
 }
 
@@ -491,12 +491,13 @@
     width: 100%;
     height: auto;
     margin-top: 1rem;
+    margin-bottom: 10rem;
 }
 .projectGrid
 {
     width: 50%;
     height: 10rem;
-  
+    
 }
 
 
