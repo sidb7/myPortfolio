@@ -24,7 +24,7 @@ export default function App() {
     <div id='about' style={{border:"2px solid white"}} ><About setcolor={setcolor}/></div>
    
     <div id='portfolio' ><Portfolio SetTabs = {SetTabs} Tabs ={Tabs} setcolor={setcolor} card={card} setCard={setCard} color={color}/></div>
-    {/* <div id='contact' ><Contact /></div> */}
+    <div id='contact' ><Contact /></div>
    {/* <div id={`${(card==0)?`cardexit`:'card' }`}><Card setCard={setCard} card={card} setcolor={setcolor} /></div> */}
    
    </div>

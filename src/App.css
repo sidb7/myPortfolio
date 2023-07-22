@@ -4,12 +4,14 @@
   scroll-behavior: smooth;
 }
 
-
+body::-webkit-scrollbar{
+  display: none;
+}   
 
 
 /* BACKGround */
 .area{
-  background: #dfe1e6;  
+  background: #191b20;  
   /* background: #191b20; */
   background: -webkit-linear-gradient(to left, #8f94fb, #d4d4d9);  
   width: 100%;
@@ -163,7 +165,7 @@
   justify-content: center;
   text-align: center;
   font-size: 45px;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 40px;
   
 }
@@ -182,14 +184,14 @@
   align-items: center;
      margin: auto;
      margin-top: 20px;
-  border: 1px solid white;
+  border: 2px solid white;
     width: 200px;
     height: 50px;
     background-color: #2629335b;
     color: white;
    font-size: 20px;
    font-weight: 100;
-   font-family: sans-serif;
+   font-family: 'Raleway', sans-serif;
   transition: 0.5s;
 }
 #ViewButton:hover
@@ -197,8 +199,8 @@
   background-color: rgba(3, 255, 255, 0.675);
  
   transition: 0.5s;
-  border: 1px solid rgb(248, 248, 248);
-  border-radius: 10px;
+  border: 2px solid rgba(3, 255, 255, 0.675);
+ 
  
   cursor: pointer;
   box-shadow: 1px 1px 15px rgba(3, 255, 255, 0.869);
@@ -211,12 +213,12 @@
   font-size: 24px;
   font-weight: 700;
   margin-left: 12px;
-  transition: all 500ms;
+  transition: all 300ms;
   
 }
 #ViewButton:hover #arrow 
 {
-  transition: all 500ms;
+  transition: all 300ms;
   transform: rotate(90deg);
   
 }
@@ -236,10 +238,10 @@
 }
 .Nav  div
 {
-  margin: 25px;
+  margin: 1.7rem;
   position: relative;
-  left: 200px;
-  font-family: sans-serif;
+  left: 17rem;
+  font-family: 'Raleway', sans-serif;
   transition: 0.5s;
 }
  
@@ -247,13 +249,11 @@
 {
   text-decoration: none;
   color: white;
- padding-top: 5px;
- padding-bottom:8px ;
-
+ 
 }
 .Nav  div:hover a
 { cursor: pointer;
-  color: #C7006B;
+  color: #ff0088;
   
   transition: 0.5s;
 }
@@ -269,15 +269,19 @@
  position: relative;
  user-select: none;
 }
-
+#about
+{
+  background-color: rgb(245, 252, 252);
+}
 #a1
 {
-   font-family: sans-serif;
-   font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+   font-size: 3rem;
     text-align: center;
+    width: fit-content;
    margin: 80px auto;
    color: #4e5053;
-  
+ 
    
 }
 
@@ -296,6 +300,7 @@
   transform: translateX(0%) ;
   transition: all 1s;
 }
+
 
 .icons
 {

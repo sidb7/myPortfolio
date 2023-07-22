@@ -94,7 +94,7 @@ var linuxVar = 20;
     <div className='About ' >
       <div  id='a1' className='hidden'> 
       <h1>ABOUT</h1>
-        <h2 >&#8212;&#8212; </h2>
+        <h2 ><hr /> </h2>
        </div>
       
       <div className='icons '>

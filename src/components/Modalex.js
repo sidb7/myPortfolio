@@ -11,14 +11,15 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 700,
-  height:700,
+  // width: 700,
+  // height:700,
   bgcolor: 'rgba(255, 255, 255, 0.920)',
   color:"#4e5053",
   font:' sans-serif',
   borderRadius: 1,
   boxShadow: 24,
-  
+  overflow:'scroll',
+ 
 };
 
 export default function Modalex(props) {
@@ -46,26 +47,26 @@ export default function Modalex(props) {
         }}
       >
         <Fade in={open}>
-          <Box sx={style} >
+          <Box sx={style} className="modelexBox">
 
           <div>
       
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleControls" className="carousel slide "  data-bs-ride="carousel">
 <div className="carousel-inner"  >
   <div className="carousel-item active" >
-    <img height={400}   src={props.image1} className="d-block w-100" alt="..."/>
+    <img   src={props.image1} className="d-block w-100 modelexIMG" alt="..."/>
   </div>
   <div className="carousel-item">
-    <img height={400}  src={props.image2} className="d-block w-100" alt="..."/>
+    <img  src={props.image2} className="d-block w-100 modelexIMG" alt="..."/>
   </div>
  
 </div>
 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-  <span className="carousel-control-prev-icon  position-relative NextPrev " style={{right:"2rem"}} aria-hidden="true"></span>
+  <span className="carousel-control-prev-icon  position-relative NextPrev "aria-hidden="true"></span>
   <span className="visually-hidden">Previous</span>
 </button>
 <button className="carousel-control-next"  type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-  <span className="carousel-control-next-icon position-relative  NextPrev "  style={{left:"2.1rem"}} aria-hidden="true"></span>
+  <span className="carousel-control-next-icon position-relative  NextPrev "   aria-hidden="true"></span>
   <span className="visually-hidden">Next</span>
 </button>
 </div>

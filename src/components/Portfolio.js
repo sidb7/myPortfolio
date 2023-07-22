@@ -168,7 +168,7 @@ export default function Portfolio(props) {
       
     <div id='projectHeading' className='hidden1'> 
       <h1>PROJECTS</h1>
-        <h2 >&#8212;&#8212; </h2>
+        <h1><hr /> </h1>
        </div>
 
 
