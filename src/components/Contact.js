@@ -31,7 +31,8 @@ export default function Contact() {
           {
             if(entry.isIntersecting)
             {
-            entry.target.classList.add('PptBoxHide')}
+            entry.target.classList.add('PptBoxHide')
+          }
             }
          })});
 
@@ -63,6 +64,7 @@ const coverRemove=()=>
   for(var i=0;i<element.length;i++)
   {
     element[i].classList.remove("PptCover")
+ 
   }
 }
 

@@ -31,17 +31,18 @@ margin: auto;
 .PptBox
 {
     
-    width: 18rem;
+    width: 17rem;
     height: 18rem;
     margin: auto;
     opacity: 0;
   
 }
 
-.PptCover 
+
+.PptCover
 {
  
-    transition: all 1s;
+    
    opacity: 0.5 !important; 
     cursor: pointer;
 
@@ -55,6 +56,7 @@ margin: auto;
     scale: 1.01;
 
 }
+
 #PptBox2:hover
 {
     opacity: 1 !important;
@@ -82,6 +84,7 @@ margin: auto;
     text-align: justify;
    
 }
+
 
 .PptBox img
 {
@@ -122,4 +125,33 @@ margin: auto;
 @keyframes PptBoxAni {
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:600px) {
+
+    .PptContainer
+    {
+    margin: auto;
+        display: block;
+        height:fit-content;
+        width: 70%;
+       
+       
+    }
+    
+.PptBox
+{
+    
+    width: 18rem;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+    opacity: 0;
+    box-shadow:  1px 1px 20px rgba(128, 128, 128, 0.405);
+    padding: 1rem;
+}
+
+
 }
