@@ -1,0 +1,171 @@
+.Presentation
+{
+
+    height: 100%;
+    position: relative;
+   background-color: white;
+   
+}
+.PptTitle
+{
+ 
+    width: fit-content;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    padding-top: 5rem ;
+    padding-bottom: 5rem;
+     text-align: center;
+    margin:auto;
+    color: #4e5053;
+    user-select: none;
+}
+
+.PptContainer
+{
+    
+    margin:  auto;
+    display: flex;
+    height:fit-content;
+    width: 70%;
+    margin-bottom: 20rem;
+   
+}
+
+.PptBox
+{
+    
+    width: 17rem;
+    height: 100%;
+    margin: auto;
+    opacity: 0;
+    padding: 5px;
+}
+.PptBox:hover
+{
+    box-shadow: 1px 1px 20px rgba(0, 255, 255, 0.434);
+}
+
+.PptCover
+{
+   filter: blur(2px);
+    cursor: pointer;
+   /* opacity: 0.9 !important; */
+}
+
+#PptBox1:hover
+{
+    filter: blur(0px);
+    opacity: 1!important;
+    border: 0px ;
+    scale: 1.01;
+   
+}
+
+#PptBox2:hover
+{
+    opacity: 1 !important;
+    filter: blur(0px);
+    border: 0px ;
+    scale: 1.01;
+}
+#PptBox3:hover
+{
+    opacity: 1 !important;
+    filter: blur(0px);
+    border: 0px ;
+    scale: 1.01;
+}
+#PptBox4:hover
+{
+    opacity: 1 !important;
+    filter: blur(0px);
+    border: 0px ;
+    scale: 1.01;
+}
+.PptBox a{
+    text-decoration: none;
+    color: #4e5053;
+    text-align: justify;
+   
+}
+
+
+.PptBox img
+{
+     width: 100%;
+    height: 12rem;
+     
+     
+}
+.PptBoxTitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4e5053;
+}
+.PptBox:hover .PptBoxTitle
+{
+    color: rgb(16, 210, 210);
+}
+
+.PptBoxHide
+{
+   
+    animation: PptBoxAni 1s forwards;
+}
+.PptBoxHide:nth-child(2)
+{
+   animation-delay:  0.2s;
+}
+.PptBoxHide:nth-child(3)
+{
+    animation-delay: 0.4s;
+}
+.PptBoxHide:nth-child(4)
+{
+    animation-delay: 0.6s;
+}
+
+@keyframes PptBoxAni {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:600px) {
+
+    .Presentation{
+        width: 100%;
+        height: 100%;
+    }
+    .PptTitle
+{
+   font-size: 2rem;
+}
+
+
+    .PptContainer
+    {
+    margin: auto;
+        display: block;
+        height:fit-content;
+        width: 100%;
+       
+       
+    }
+    
+.PptBox
+{
+     
+    width: 18rem;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+    opacity: 0;
+    box-shadow:  1px 1px 20px rgba(128, 128, 128, 0.405);
+    padding: 1rem;
+}
+
+
+}

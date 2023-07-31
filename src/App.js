@@ -5,8 +5,9 @@ import "./App.css"
 import Nav from './components/Nav'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+
+import Presentation from './components/Presentation'
 import Contact from './components/Contact'
-import Card from './components/Card'
 export default function App() {
 
 
@@ -24,7 +25,9 @@ export default function App() {
     <div id='about' style={{border:"2px solid white"}} ><About setcolor={setcolor}/></div>
    
     <div id='portfolio' ><Portfolio SetTabs = {SetTabs} Tabs ={Tabs} setcolor={setcolor} card={card} setCard={setCard} color={color}/></div>
-    <div id='contact' ><Contact /></div>
+    <div id='presentation' ><Presentation setcolor={setcolor}/></div>
+    <div id='contact' ><Contact setcolor={setcolor}/></div>
+
    {/* <div id={`${(card==0)?`cardexit`:'card' }`}><Card setCard={setCard} card={card} setcolor={setcolor} /></div> */}
    
    </div>

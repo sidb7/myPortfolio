@@ -484,7 +484,13 @@ body::-webkit-scrollbar{
   width: 100%;
 }
 
+/* Presentation */
 
+#presentation
+{
+    height: 100%;
+  
+}
 
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -531,7 +537,7 @@ body::-webkit-scrollbar{
 }
 .Nav div a 
 {
- font-size: 1rem;
+ font-size: 0.8rem;
 }
 
 
