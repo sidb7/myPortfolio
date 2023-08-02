@@ -628,12 +628,16 @@ body::-webkit-scrollbar{
   height: 30px ;
   width: 80%;
   margin:10px auto ;
-
+  
 }
-
+ 
+.progress p
+{
+   font-size: 1rem;
+}
 .progress h6{
   left: 81%;
- 
+
 }
 
 
