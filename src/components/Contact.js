@@ -68,9 +68,9 @@ export default function Contact() {
                  <div className="mb-3 w-100">
             
             <input type="text" className="form-control bg-dark Message border-0 text-light" id="formGroupExampleInput" placeholder="Enter your message"/>
-   </div>
-
-                 </div>
+                </div>
+          <div id='SubmitButtonBox'> <button id='SubmitButton'>SUBMIT</button></div>
+          </div>
     </div>
     <div className='BottomBox'>
     <div className='UPButton' ><a href="#" className='UPButton1'>&#10506;</a></div>  

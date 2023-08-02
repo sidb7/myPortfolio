@@ -128,6 +128,32 @@ font-weight: 800;
     100%{transform:translateX(0rem);opacity: 1;}
 
 }
+
+#SubmitButtonBox
+{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+#SubmitButton
+{
+    width: 8rem;
+    padding: 0.3rem;
+    font-size: 600;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color:rgba(220, 20, 60, 0);
+    border: 2px solid white;
+    
+}
+#SubmitButton:active
+{
+    background-color:rgb(179, 14, 47);
+    scale: 0.95;
+  
+}
+
 /* ////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width:600px) {
