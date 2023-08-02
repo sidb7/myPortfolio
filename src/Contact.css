@@ -3,6 +3,7 @@
     background-color: #1b1d23;
     height: 55rem;
     padding-top: 6rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .Heading
@@ -59,22 +60,24 @@ font-weight: 800;
    margin-top: -2rem;
     position: absolute;
     border-radius: 1px;
+    transition: all 0.2s;
 }
 .UPButton1
 {
   text-decoration: none;
   color: white; 
- 
+  transition: all 0.2s;
 
 }
 .UPButton1:hover
 {
     color: white;
- 
+    transition: all 0.2s;
 }
 .UPButton:hover
 {
     background-color: rgba(247, 10, 57, 0.974);
+    transition: all 0.2s;
 }
 .IconContact
 {
@@ -90,6 +93,7 @@ font-weight: 800;
     color: white;
     height: 100%;
     width: 100%;
+    transition: all 0.2s;
 }
 .iconR:hover
 {

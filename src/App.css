@@ -367,14 +367,28 @@ body::-webkit-scrollbar{
   width: 250px;
   
 }
-
+#p2Heading
+{
+  text-align: center;
+  font-weight: 900;
+  color: rgb(87, 87, 87);
+}
 #p2
 {
   /* border: 2px solid gray; */
     height: fit-content ;
-    width: 500px;
+    width: 35rem;
     margin: auto;
     user-select: text;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+#p2Link
+{
+  text-decoration: none;
+  text-align: center;
+  color: #00b3f4;
+  font-weight: 500;
 }
 
 .hidden1
@@ -480,7 +494,7 @@ body::-webkit-scrollbar{
 {
   border: 2px solid rgb(241, 241, 241);
   background-color: rgb(241, 241, 241);
-  height: 1400px;
+  height: 80rem;
   width: 100%;
 }
 
@@ -596,13 +610,14 @@ body::-webkit-scrollbar{
   width: 95%;
  text-align: justify  ;
   padding:0px 10px;
-
+  font-family: 'Raleway', sans-serif;
+ 
 }
 .skill
 {
   height: 25rem;
   width: 100%;
- 
+
 }
 
 

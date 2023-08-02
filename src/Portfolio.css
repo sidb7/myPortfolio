@@ -63,7 +63,7 @@
 {
     background-color: #C7006B;
     position: absolute;
-    width: 175px;
+    width: 25%;
     height: 30px;
     transition: all 0.3s;
     z-index: -1;
@@ -76,7 +76,7 @@
     background-color: #C7006B;
     position: absolute;
     z-index: -1;
-    width: 175px;
+    width: 25%;
     height: 30px;
 }
 
@@ -87,7 +87,7 @@
     background-color: #C7006B;
     position: absolute;
     z-index: -1;
-    width: 175px;
+    width: 25%;
     height: 30px;
 }
 .slider3
@@ -97,7 +97,7 @@
     background-color: #C7006B;
     position: absolute;
     z-index: -1;
-    width: 175px;
+    width: 25%;
     height: 30px;
 }
 
@@ -366,9 +366,19 @@
 
 
 /* MODALEX */
+.closeButtonBox
+{
+    width: 100%;
+  
+    display: flex;
+    justify-content: end;
+}
 .closeButton
 { 
-    transition: all 1s;
+    transition: all 0.5s;
+    width: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
 }
 
 .closeButton:hover

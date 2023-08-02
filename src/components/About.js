@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {MdOutlineSpeed,MdDevices,MdLightbulbOutline,MdDynamicFeed} from 'react-icons/md'
-
+import "../App.css"
 export default function About(props) {
 useEffect(()=>{
 // animation 0
@@ -80,11 +80,12 @@ useEffect(()=>{
   
 
 var cssVar = 80;
-var htmlVar = 60;
-var reactVar =50;
-var javascriptVar =50;
-var javaVar =40;
-var linuxVar = 20;
+var htmlVar = 70;
+var reactVar =80;
+var javascriptVar =60;
+var javaVar =70;
+var SQLVar = 70;
+var linuxVar = 60;
 
 
 
@@ -112,8 +113,13 @@ var linuxVar = 20;
           <img src="1667999351376-01.jpeg (1).png" alt="" height={100} width={100}/>
         </div>
         <div id='p2' className='hidden1' >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aspernatur voluptatem provident soluta tenetur eaque, similique earum numquam nulla facere enim? Delectus error, iure animi dicta aperiam vero obcaecati dolorem!
+          <h4 id='p2Heading'>Who's this guy?</h4>
+        Passionate and dedicated Full Stack Developer with a strong academic background and a deep love for coding. Proficient in both front-end and back-end technologies, I am committed to creating user-friendly and efficient web applications.        
+        
+        <p style={{textAlign:"center"}}><a href="#contact" id='p2Link'>Let's make something special.</a></p>
+        
         </div>
+    
         </div>
 
 
@@ -121,9 +127,11 @@ var linuxVar = 20;
         <div className='skill hidden3'>
         <div className='progress'><p>CSS</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${cssVar}%`}}></div><h6 >{cssVar}%</h6></div></div>
         <div className='progress'><p>HTML</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${htmlVar}%`}}></div><h6 >{htmlVar}%</h6></div></div>
-        <div className='progress'><p>React</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${reactVar}%`}}></div><h6 >{reactVar}%</h6></div></div>
+        <div className='progress'><p>React-JS</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${reactVar}%`}}></div><h6 >{reactVar}%</h6></div></div>
         <div className='progress'><p>Javascript</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${javascriptVar}%`}}></div><h6 >{javascriptVar}%</h6></div></div>
         <div className='progress'><p>Java</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${javaVar}%`}}></div><h6 >{javaVar}%</h6></div></div>
+        <div className='progress'><p>SQL</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${SQLVar}%`}}></div><h6 >{SQLVar}%</h6></div></div>
+        <div className='progress'><p>SpringBoot</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${linuxVar}%`}}></div><h6 >{linuxVar}%</h6></div></div>
         <div className='progress'><p>Linux</p><div style={{width:"85%",backgroundColor:"#EEEEEE",display:"flex"}}><div className='proSlide  hidden2' style={{height:"100%",width:`${linuxVar}%`}}></div><h6 >{linuxVar}%</h6></div></div>
         </div>
 

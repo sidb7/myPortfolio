@@ -48,7 +48,7 @@ export default function Contact() {
   return (
    <>
    <div className="Contact">
-    <div className='Heading'>CONTACT <hr /></div>
+    <div className='Heading textBoxHide'>CONTACT <hr /></div>
     
 
     <div className='Text'>

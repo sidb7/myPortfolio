@@ -84,7 +84,7 @@ export default function Modalex(props) {
             <Typography id="transition-modal-description" sx={{ mt: 1 ,height:140,px:3,textAlign:'justify'}}>
               {props.text}
             </Typography>
-            <div className='closeButton me-2'  onClick={handleClose}><IoMdClose size={30} color='gray'/></div>
+            <div className='closeButtonBox' ><IoMdClose className='closeButton '  onClick={handleClose} size={30} color='gray'/></div>
           </Box>
          
         </Fade>
