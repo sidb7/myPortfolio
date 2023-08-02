@@ -87,7 +87,7 @@ const coverRemove=()=>
         </div>
 
         <div className='PptBox ' id='PptBox1' onMouseEnter={cover} onMouseLeave={coverRemove}>
-          <a href="https://drive.google.com/file/d/1e4a-JsUmvAYA449P-8jIqwCh-RT9KTH6/view?usp=sharing" target='_blank'><img src="minine.JPG" alt="" />
+          <a href="https://drive.google.com/file/d/1vXawFQibZxh0PDoOs38v6Nlml2Iwb424/view?usp=sharing" target='_blank'><img src="minine.JPG" alt="" />
           <div className='PptBoxTitle'>Smart Coal Mine</div>
           <div className="Pptdate">March 20, 2023</div>
           <hr />
