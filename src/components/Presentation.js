@@ -76,6 +76,16 @@ const coverRemove=()=>
         <div ><hr/></div>
       </div>
       <div className='PptContainer'>
+
+      <div className='PptBox ' id='PptBox4' onMouseEnter={cover} onMouseLeave={coverRemove}>
+          <a href="https://drive.google.com/file/d/1APnPEAutZ1Tj-HP6KSOEj4tWEF_YsTiR/view?usp=sharing" target='_blank'><img src="miners.JPG" alt="" />
+          <div className='PptBoxTitle'>Smart Wearables</div>
+          <div className="Pptdate">March 30,2023</div>
+          <hr />
+          <div className="PptText">Out of the 40 proposals submitted, our project, presented under the name "Smart Wearables for Miners" was awarded the second position in the Industry 4.0 domain. Prize money of Rs.4000 was awarded for the project with certificates.  </div>
+          </a>
+        </div>
+
         <div className='PptBox ' id='PptBox1' onMouseEnter={cover} onMouseLeave={coverRemove}>
           <a href="https://drive.google.com/file/d/1e4a-JsUmvAYA449P-8jIqwCh-RT9KTH6/view?usp=sharing" target='_blank'><img src="minine.JPG" alt="" />
           <div className='PptBoxTitle'>Smart Coal Mine</div>
@@ -84,30 +94,25 @@ const coverRemove=()=>
           <div className="PptText">India is home to 1,531 operating mines and produces 95 minerals, which includes 4 fuels, 10 metallic, 23 non-metallic, 3 atomic and 55 minor minerals. For years, safety has been a major concern in the mining industry. </div>
           </a>
         </div>
-        <div className='PptBox ' id='PptBox2' onMouseEnter={cover} onMouseLeave={coverRemove}>
-          <a href="https://drive.google.com/file/d/1pq5N_WODtlQ-Ookdi5Dz-N1KX5-dqKiB/view?usp=sharing"><img src="datajava.JPG" alt="" />
-          <div className='PptBoxTitle'>Java Programming</div>
-          <div className="Pptdate">October 18, 2021</div>
-          <hr />
-          <div className="PptText">Passionate about the art of coding and the endless possibilities it holds, through rigorous training and unwavering commitment, I have successfully delved into both the fundamental principles and advanced intricacies of Java.</div>
-          </a>
-        </div>
+
         <div className='PptBox' id='PptBox3' onMouseEnter={cover} onMouseLeave={coverRemove}>
-          <a href="https://drive.google.com/file/d/1U9sBAVoKsCio9z4BgA1DXmXQiSrBbGo_/view?usp=sharing"><img src="Linuximg.png" alt="" />
+          <a href="https://drive.google.com/file/d/1U9sBAVoKsCio9z4BgA1DXmXQiSrBbGo_/view?usp=sharing" target='_blank'><img src="Linuximg.png" alt="" />
           <div className='PptBoxTitle'>Linux Automation</div>
           <div className="Pptdate">December 20,2021</div>
           <hr />
           <div className="PptText">My expertise extends to the seamless management of critical services, including SSH, Apache, NFS, FTP, Samba, and DNS, each playing a pivotal role in ensuring smooth and secure operations within diverse environments.</div>
           </a>
         </div>
-        <div className='PptBox ' id='PptBox4' onMouseEnter={cover} onMouseLeave={coverRemove}>
-          <a href=""><img src="https://www.blogtyrant.com/wp-content/uploads/2020/03/free-images-for-blog.png" alt="" />
-          <div className='PptBoxTitle'>Hello</div>
-          <div className="Pptdate">April 20,2016</div>
+        
+        <div className='PptBox ' id='PptBox2' onMouseEnter={cover} onMouseLeave={coverRemove}>
+          <a href="https://drive.google.com/file/d/1pq5N_WODtlQ-Ookdi5Dz-N1KX5-dqKiB/view?usp=sharing" target='_blank'><img src="datajava.JPG" alt="" />
+          <div className='PptBoxTitle'>Java Programming</div>
+          <div className="Pptdate">October 18, 2021</div>
           <hr />
-          <div className="PptText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi in nobis animi ex distinctio officiis quod, quasi eveniet dolores quo quas nulla? Atque facere, debitis reprehenderit magni explicabo rerum tempore.</div>
+          <div className="PptText">Passionate about the art of coding and the endless possibilities it holds, through rigorous training and unwavering commitment, I have successfully delved into both the fundamental principles and advanced intricacies of Java.</div>
           </a>
         </div>
+  
         
       </div>
 
