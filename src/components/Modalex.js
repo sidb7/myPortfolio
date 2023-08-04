@@ -54,7 +54,7 @@ export default function Modalex(props) {
       <div id="carouselExampleControls" className="carousel slide "  data-bs-ride="carousel">
 <div className="carousel-inner"  >
   <div className="carousel-item active" >
-    <img   src={props.image1} className="d-block w-100 modelexIMG" alt="..."/>
+    <img   src="imagesPORT/Screenshot_1525.png" className="d-block w-100 modelexIMG" alt="..."/>
   </div>
   <div className="carousel-item">
     <img  src={props.image2} className="d-block w-100 modelexIMG" alt="..."/>
