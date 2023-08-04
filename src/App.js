@@ -23,7 +23,7 @@ export default function App() {
       {
         const scrolled = window.scrollY;
 
-        if(window.screen.width>400){
+        if(window.screen.width>600){
           if(scrolled<=570){setcolor(0)}
           if(scrolled>=570){setcolor(1)}
           if(scrolled>=1570){setcolor(2)}
@@ -32,8 +32,8 @@ export default function App() {
 
         else
         {
-          if(scrolled<=570){setcolor(0)}
-          if(scrolled>=570){setcolor(1)}
+          if(scrolled<=270){setcolor(0)}
+          if(scrolled>=270){setcolor(1)}
           if(scrolled>=2570){setcolor(2)}
           if(scrolled>=3670){setcolor(3)}
         }
