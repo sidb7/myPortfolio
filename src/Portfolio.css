@@ -2,8 +2,8 @@
 {
     /* border: 2px solid blue; */
     height: 100%;
-    
-   
+    width: 100%;
+ 
 }
 #projectHeading
 {
@@ -22,6 +22,7 @@
     opacity: 0;
     transform: translateX(40%);
     transition: all 1s;
+    
 }
 .headingAni
 {
@@ -39,6 +40,7 @@
     width: 40%;
     height: 30px;
     margin-bottom: 10px;
+    
 }
 .NavButtons
 {
@@ -447,7 +449,8 @@
 
 #projectHeading
 {
-  width: 100%;
+  width: fit-content;
+ 
 }
 
 .GridNav
@@ -456,7 +459,7 @@
     margin:  auto;
     /* border: 2px solid green; */
     width: 90%;
-    
+    height: 100%;
  
 }
 .NavButtons
@@ -499,7 +502,7 @@
 {
     /* border: 2px solid red; */
     width: 100%;
-    height: auto;
+    height:100%;
     margin-top: 1rem;
     margin-bottom: 10rem;
 }

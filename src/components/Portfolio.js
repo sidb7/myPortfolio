@@ -40,8 +40,6 @@ export default function Portfolio(props) {
           {
             if(entry.isIntersecting)
             {
-            
-          
            setss(1)
             }
           }
@@ -105,8 +103,8 @@ export default function Portfolio(props) {
           Technology:'Css',
      
           text:"It is a web-based application that utilizes the React framework for the front-end, Spring Boot for the back-end, and ESP8266 for the embedded systems.The app is designed to enhance the safety and health of coal miners in the mining industry by providing real-time monitoring of various factors such as heart rate, temperature, humidity, and surrounding gas levels.",
-          image1:'https://img.freepik.com/free-photo/creative-copywriting-commercial-text-seo-editing_107791-15687.jpg?w=1380&t=st=1689221806~exp=1689222406~hmac=0d754e9c46fbe5170a635d9a12cd29f699c10c80a7397fe082ca370f5dad65e1',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
+          image1:'imagesPORT\Screenshot_1525.png',
+          image2:'imagesPORT\Screenshot_1523.png'
         },
       {   Title:'News Daily - Daily Headlines web based app',
           Technology:'React',

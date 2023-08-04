@@ -28,6 +28,7 @@ export default function App() {
           if(scrolled>=570){setcolor(1)}
           if(scrolled>=1570){setcolor(2)}
           if(scrolled>=2670){setcolor(3)}
+
       }
 
         else

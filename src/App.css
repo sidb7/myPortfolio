@@ -342,6 +342,7 @@ body::-webkit-scrollbar{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .pic
@@ -372,6 +373,7 @@ body::-webkit-scrollbar{
   text-align: center;
   font-weight: 900;
   color: rgb(87, 87, 87);
+  
 }
 #p2
 {
@@ -382,6 +384,7 @@ body::-webkit-scrollbar{
     user-select: text;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    
 }
 #p2Link
 {
@@ -396,6 +399,7 @@ body::-webkit-scrollbar{
   opacity: 0;
   transition: all 1s;
   transform: translateX(-30%);
+  
 }
 
 .show1
@@ -403,6 +407,7 @@ body::-webkit-scrollbar{
   opacity: 1;
   transition: all 1s;
   transform: translateX(0%);
+  
 }
 
 .skill
@@ -412,6 +417,7 @@ body::-webkit-scrollbar{
   width: 650px;
   display:grid;
   align-content: center;
+  
 }
 
 .progress
@@ -465,7 +471,7 @@ body::-webkit-scrollbar{
 {
   
   background-color:  #35A4A5;  
-  
+  transition-delay: 0.5s;
 
 }
 
@@ -484,10 +490,7 @@ body::-webkit-scrollbar{
   
 }
 
-.proSlide
-{
-  transition-delay: 0.5s;
-}
+
 
 /* PORTFOLIO */
 #portfolio
@@ -495,7 +498,7 @@ body::-webkit-scrollbar{
   border: 2px solid rgb(241, 241, 241);
   background-color: rgb(241, 241, 241);
   height: 80rem;
-  width: 100%;
+  width: 100%; 
 }
 
 /* Presentation */
@@ -515,6 +518,10 @@ body::-webkit-scrollbar{
     width: 100%;
     height:100vh;
     
+  }
+  #home
+  {
+    height: 100%;
   }
   .Home
   {
@@ -557,8 +564,8 @@ body::-webkit-scrollbar{
 
 #about
 {
-  
-  height: 120rem;
+  width: 100%;
+  height: 100%;
 }
 .About
 { 
@@ -598,7 +605,7 @@ body::-webkit-scrollbar{
 {
   margin: auto;
   width: 100%;
-  height: auto;
+  height: 100%;
 
 }
 #p1{
@@ -639,6 +646,7 @@ body::-webkit-scrollbar{
   left: 81%;
 
 }
+
 
 
 
