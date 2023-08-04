@@ -22,14 +22,28 @@ export default function App() {
       window.addEventListener('scroll',()=>
       {
         const scrolled = window.scrollY;
-        if(scrolled<=570){setcolor(0)}
-        if(scrolled>=570){setcolor(1)}
-        if(scrolled>=1570){setcolor(2)}
-        if(scrolled>=2670){setcolor(3)}
+
+        if(window.screen.width>400){
+          if(scrolled<=570){setcolor(0)}
+          if(scrolled>=570){setcolor(1)}
+          if(scrolled>=1570){setcolor(2)}
+          if(scrolled>=2670){setcolor(3)}
+      }
+
+        else
+        {
+          if(scrolled<=570){setcolor(0)}
+          if(scrolled>=570){setcolor(1)}
+          if(scrolled>=2570){setcolor(2)}
+          if(scrolled>=3670){setcolor(3)}
+        }
       })
+
+      
+      
     }
-
-
+ 
+    
     <div id='BackDrop'>
    <div id='home' > <Home /></div>
    
