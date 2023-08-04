@@ -116,7 +116,7 @@ export default function Portfolio(props) {
         },
       {   Title:'Data registration software using JFrame and JDC.',
           Technology:'JavaScript',
-          text:'A data registration software capable of performing CRUD operations on the data such as user ID, username and passwords that is stored in the Database.',
+          text:'This project is a robust and user-friendly Data Registration Software built using Java technologies including Java Swing, JDBC and Java Servlet using Apache Tomcat server. The software provides a graphical interface for performing CRUD (Create, Read, Update, Delete) operations on user data stored in a database. The primary focus of the software is to efficiently manage user information, including user IDs, usernames, and passwords.',
           image1:'imagesPORT/JDBC1.JPG',
           image2:'imagesPORT/JDBC2.JPG'
           ,MainImg:"imagesPORT/JDBC4.JPG"
