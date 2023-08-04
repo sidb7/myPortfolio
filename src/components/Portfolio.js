@@ -103,8 +103,8 @@ export default function Portfolio(props) {
           Technology:'Css',
      
           text:"It is a web-based application that utilizes the React framework for the front-end, Spring Boot for the back-end, and ESP8266 for the embedded systems.The app is designed to enhance the safety and health of coal miners in the mining industry by providing real-time monitoring of various factors such as heart rate, temperature, humidity, and surrounding gas levels.",
-          image1:'imagesPORT\Screenshot_1525.png',
-          image2:'imagesPORT\Screenshot_1523.png'
+          image1:'imagesPORT/Screenshot_1525.png',
+          image2:'imagesPORT/Screenshot_1523.png'
         },
       {   Title:'News Daily - Daily Headlines web based app',
           Technology:'React',
