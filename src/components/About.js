@@ -63,17 +63,6 @@ useEffect(()=>{
   
 
 
-  const observer4 = new IntersectionObserver((enteries) =>
-  { 
-    enteries.forEach((entry) =>{
-       
-        if(entry.isIntersecting)
-        {
-          props.setcolor(1);
-          
-        }})});
-  const hiddenElements4 = document.querySelectorAll('.About');
-  hiddenElements4.forEach((el) => observer4.observe(el))
 
 
 },[])

@@ -17,16 +17,29 @@ export default function App() {
   
   return (
     <>
+
+    {
+      window.addEventListener('scroll',()=>
+      {
+        const scrolled = window.scrollY;
+        (scrolled<=570)?setcolor(0):<></>;
+        (scrolled>=570)?setcolor(1):<></>;
+        (scrolled>=1570)?setcolor(2):<></>;
+        (scrolled>=2670)?setcolor(3):<></>;
+      })
+    }
+
+
     <div id='BackDrop'>
-   <div id='home' > <Home setcolor={setcolor}/></div>
+   <div id='home' > <Home /></div>
    
     <Nav color={color}/>
   
-    <div id='about' style={{border:"2px solid white"}} ><About setcolor={setcolor}/></div>
+    <div id='about' style={{border:"2px solid white"}} ><About /></div>
    
-    <div id='portfolio' ><Portfolio SetTabs = {SetTabs} Tabs ={Tabs} setcolor={setcolor} card={card} setCard={setCard} color={color}/></div>
-    <div id='presentation' ><Presentation setcolor={setcolor}/></div>
-    <div id='contact' ><Contact setcolor={setcolor}/></div>
+    <div id='portfolio' ><Portfolio SetTabs = {SetTabs} Tabs ={Tabs}  card={card} setCard={setCard} color={color}/></div>
+    <div id='presentation' ><Presentation /></div>
+    <div id='contact' ><Contact /></div>
 
    {/* <div id={`${(card==0)?`cardexit`:'card' }`}><Card setCard={setCard} card={card} setcolor={setcolor} /></div> */}
    

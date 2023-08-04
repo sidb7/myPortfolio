@@ -2,29 +2,7 @@ import React, { useEffect } from 'react'
 import "../App.css"
 export default function Home(props) {
 
-useEffect(()=>{
 
-  const observer = new IntersectionObserver((enteries) =>
-  { 
-    enteries.forEach((entry) =>{
-        console.log(entry);
-        if(entry.isIntersecting)
-        {
-          
-          props.setcolor(0);
-        }
-        
-       
-    })
-  }
-  );
-
-
-  const hiddenElements = document.querySelectorAll('.Home');
-  hiddenElements.forEach((el) => observer.observe(el));
-
-
-},[])
   
 
 

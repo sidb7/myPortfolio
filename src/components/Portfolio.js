@@ -41,7 +41,7 @@ export default function Portfolio(props) {
             if(entry.isIntersecting)
             {
             
-            props.setcolor(2);
+          
            setss(1)
             }
           }

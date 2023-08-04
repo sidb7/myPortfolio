@@ -28,7 +28,7 @@ export default function Presentation(props) {
       enteries.forEach((entry) =>{
           
           if(entry.isIntersecting)
-          {  {props.setcolor(3)}
+          { 
             if(entry.isIntersecting)
             {
             entry.target.classList.add('PptBoxHide')
