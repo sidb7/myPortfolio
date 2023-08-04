@@ -20,7 +20,7 @@ export default function ProjectGrid(props) {
           <Modalex Title={props.Title} text={props.text} image1={props.image1} image2={props.image2} />
           </div>
         </div> 
-        <img src={props.image1} alt="" />
+        <img src={props.MainImg} alt="" />
     </div>
 
     </>

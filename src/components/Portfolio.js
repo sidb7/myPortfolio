@@ -103,56 +103,30 @@ export default function Portfolio(props) {
           Technology:'Css',
      
           text:"It is a web-based application that utilizes the React framework for the front-end, Spring Boot for the back-end, and ESP8266 for the embedded systems.The app is designed to enhance the safety and health of coal miners in the mining industry by providing real-time monitoring of various factors such as heart rate, temperature, humidity, and surrounding gas levels.",
-          image1:'imagesPORT/Screenshot_1525.png',
-          image2:'imagesPORT/Screenshot_1523.png'
+          image1:"imagesPORT/Screenshot_1525.png",
+          image2:"imagesPORT/Screenshot_1523.png",
+          MainImg:"imagesPORT/miners-free-template-1.jpg"
         },
       {   Title:'News Daily - Daily Headlines web based app',
           Technology:'React',
           text:'The Daily Top Headlines app is a web-based application built using the React framework. The app fetches data from a third-party API and displays the top news headlines from various categories such as business, entertainment, sports, technology, and more.',
-          image1:'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
+          image1:'imagesPORT/Screenshot (1654).png',
+          image2:'imagesPORT/Screenshot (1655).png'
+          ,MainImg:"imagesPORT/[Downloader.la]-64cd19ffa45fc.jpg"
         },
       {   Title:'Data registration software using JFrame and JDC.',
           Technology:'JavaScript',
           text:'A data registration software capable of performing CRUD operations on the data such as user ID, username and passwords that is stored in the Database.',
-          image1:'https://img.freepik.com/free-photo/website-design-content-layout-graphic_53876-21203.jpg?w=1380&t=st=1689221748~exp=1689222348~hmac=09d3af49df204a9cf210d1778436a2108570ad9780693159a51eb3b69f5ade85',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
+          image1:'imagesPORT/JDBC1.JPG',
+          image2:'imagesPORT/JDBC2.JPG'
+          ,MainImg:"imagesPORT/JDBC4.JPG"
         },
       {   Title:'SlimJim',
           Technology:'React',
           text:'dknfdn dkgnkdgg a;fm',
           image1:'https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Best-restaurant-website-design-inspirations_4_michiramen-3.jpg?width=1024&height=512&name=Best-restaurant-website-design-inspirations_4_michiramen-3.jpg',
           image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
-        },
-      {   Title:'TextUtils',
-          Technology:'JavaScript',
-          text:'dknfdn dkgnkdgg a;fm',
-          image1:'https://themewagon.com/wp-content/uploads/2021/10/feane-1.png',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
-        },
-      {   Title:'Haha',
-          Technology:'Css',
-          text:'dknfdn dkgnkdgg a;fm',
-          image1:'https://img.freepik.com/free-photo/keyword-seo-content-website-tags-search_53876-120179.jpg?w=1060&t=st=1689221840~exp=1689222440~hmac=b9a6ee6cbf80de8c16f38230b66191e38cfbdd0767b6a832d98a500a33a99416',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
-        },
-      {   Title:'HelloApp',
-          Technology:'JavaScript',
-          text:'dknfdn dkgnkdgg a;fm',
-          image1:'https://img.freepik.com/premium-photo/responsive-design-e-magazine-website-devices-isolated-white-background-3d-rendering-mockup_72104-3724.jpg?w=1380',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
-        },
-      {   Title:'NewsApp',
-          Technology:'JavaScript',
-          text:'dknfdn dkgnkdgg a;fm',
-          image1:'https://colorlib.com/wp/wp-content/uploads/sites/2/miners-free-template-1.jpg',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
-        },
-      {   Title:'NewsApp',
-          Technology:'JavaScript',
-          text:'dknfdn dkgnkdgg a;fm',
-          image1:'https://img.freepik.com/free-vector/hand-drawn-weather-effects_23-2149117711.jpg',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
+          ,MainImg:"imagesPORT/miners-free-template-1.jpg"
         },
       
     ]
@@ -187,7 +161,7 @@ export default function Portfolio(props) {
         console.log(element);
      return (
       (props.Tabs===element.Technology||props.Tabs==="1")?
-     <ProjectGrid setCard={props.setCard} ss={ss} card = {props.card} Title = {element.Title} Technology = {element.Technology} text = {element.text} image1={element.image1} image2={element.image2}/>  
+     <ProjectGrid setCard={props.setCard} ss={ss} card = {props.card} Title = {element.Title} Technology = {element.Technology} text = {element.text} MainImg={element.MainImg} image1={element.image1} image2={element.image2}/>  
      :""); 
        })} 
     </div>
