@@ -121,13 +121,13 @@ export default function Portfolio(props) {
           image2:'imagesPORT/JDBC2.JPG'
           ,MainImg:"imagesPORT/JDBC4.JPG"
         },
-      {   Title:'SlimJim',
-          Technology:'React',
-          text:'dknfdn dkgnkdgg a;fm',
-          image1:'https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Best-restaurant-website-design-inspirations_4_michiramen-3.jpg?width=1024&height=512&name=Best-restaurant-website-design-inspirations_4_michiramen-3.jpg',
-          image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
-          ,MainImg:"imagesPORT/miners-free-template-1.jpg"
-        },
+      // {   Title:'SlimJim',
+      //     Technology:'React',
+      //     text:'dknfdn dkgnkdgg a;fm',
+      //     image1:'https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Best-restaurant-website-design-inspirations_4_michiramen-3.jpg?width=1024&height=512&name=Best-restaurant-website-design-inspirations_4_michiramen-3.jpg',
+      //     image2:'https://www.kyozou.com/wp-content/uploads/2019/07/How-to-Select-Products-for-an-e-commerce-Store-1.jpg'
+      //     ,MainImg:"imagesPORT/miners-free-template-1.jpg"
+      //   },
       
     ]
   
