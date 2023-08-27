@@ -4,7 +4,7 @@ import {RiLinkedinFill} from 'react-icons/ri';
 import {BsInstagram} from 'react-icons/bs';
 import {FaFacebookF} from 'react-icons/fa';
 
-import {AiFillGitlab} from 'react-icons/ai';
+import {AiFillGithub} from 'react-icons/ai';
 export default function Contact() {
 
   useEffect(()=>{
@@ -78,7 +78,7 @@ export default function Contact() {
     <div className="IconContact"><RiLinkedinFill className='iconR'/></div>
     <div className="IconContact"><BsInstagram className='iconR'/></div>
     <div className="IconContact"><FaFacebookF className='iconR'/></div>
-    <div className="IconContact"><AiFillGitlab className='iconR'/></div>
+    <div  className="IconContact"><a href="https://github.com/sidb7?tab=repositories" target='_blank'><AiFillGithub className='iconR'/></a></div>
     </div>
 
    </div>

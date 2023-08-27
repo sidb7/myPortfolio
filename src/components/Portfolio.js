@@ -76,7 +76,7 @@ export default function Portfolio(props) {
     setcolor(2);
   setss(1);
     
-    props.SetTabs('JavaScript')
+    props.SetTabs('Java')
   }
   const Button3=()=>
   {
@@ -94,15 +94,23 @@ export default function Portfolio(props) {
      element.classList.add('slider3');
     setcolor(4)
     setss(1);
-    props.SetTabs('Css')
+    props.SetTabs('SpringBoot')
   }
  
   let data1 = 
     [
       {   Title:'Coal mine safety and health monitoring system.',
-          Technology:'Css',
-     
+          Technology:'SpringBoot',
           text:"It is a web-based application that utilizes the React framework for the front-end, Spring Boot for the back-end, and ESP8266 for the embedded systems.The app is designed to enhance the safety and health of coal miners in the mining industry by providing real-time monitoring of various factors such as heart rate, temperature, humidity, and surrounding gas levels.",
+          image1:"imagesPORT/Screenshot_1525.png",
+          image2:"imagesPORT/Screenshot_1523.png",
+          MainImg:"imagesPORT/miners-free-template-1.jpg"
+        },
+        {
+          Title:'KanbanFlow',
+          Technology:'React',
+          text: `KanbanFlow is a dynamic project management tool designed to streamline your workflow with its intuitive interface and robust features. Developed using React.js, this Kanban Board incorporates cutting-edge technology to enhance task organization and collaboration. The project leverages the power of React DND (Drag and Drop) to enable effortless task movement across different swim lanes, providing a seamless and interactive user experience. One of the standout features of KanbanFlow is its utilization of the web browser's local storage. This strategic implementation ensures that the state of each task within its respective swim lane is persistently stored. This means that even if you refresh the page or encounter an unexpected closure, your data and task states remain intact, eliminating the frustration of losing progress and details. To ensure a seamless user experience across devices, KanbanFlow is built with responsive design principles using Bootstrap.` ,
+          link: 'https://sidb7.github.io/TrelloManagement/',
           image1:"imagesPORT/Screenshot_1525.png",
           image2:"imagesPORT/Screenshot_1523.png",
           MainImg:"imagesPORT/miners-free-template-1.jpg"
@@ -115,7 +123,7 @@ export default function Portfolio(props) {
           ,MainImg:"imagesPORT/[Downloader.la]-64cd19ffa45fc.jpg"
         },
       {   Title:'Data registration software using JFrame and JDC.',
-          Technology:'JavaScript',
+          Technology:'Java',
           text:'This project is a robust and user-friendly Data Registration Software built using Java technologies including Java Swing, JDBC and Java Servlet using Apache Tomcat server. The software provides a graphical interface for performing CRUD (Create, Read, Update, Delete) operations on user data stored in a database. The primary focus of the software is to efficiently manage user information, including user IDs, usernames, and passwords.',
           image1:'imagesPORT/JDBC1.JPG',
           image2:'imagesPORT/JDBC2.JPG'
@@ -161,7 +169,7 @@ export default function Portfolio(props) {
         console.log(element);
      return (
       (props.Tabs===element.Technology||props.Tabs==="1")?
-     <ProjectGrid setCard={props.setCard} ss={ss} card = {props.card} Title = {element.Title} Technology = {element.Technology} text = {element.text} MainImg={element.MainImg} image1={element.image1} image2={element.image2}/>  
+     <ProjectGrid link={element.link} setCard={props.setCard} ss={ss} card = {props.card} Title = {element.Title} Technology = {element.Technology} text = {element.text} MainImg={element.MainImg} image1={element.image1} image2={element.image2}/>  
      :""); 
        })} 
     </div>

@@ -17,7 +17,7 @@ export default function ProjectGrid(props) {
             <p>{props.Technology}</p>
             </div>
         <div id='buttonBox' onClick={setCard}>
-          <Modalex Title={props.Title} text={props.text} image1={props.image1} image2={props.image2} />
+          <Modalex link={props.link} Title={props.Title} text={props.text} image1={props.image1} image2={props.image2} />
           </div>
         </div> 
         <img src={props.MainImg} alt="" />

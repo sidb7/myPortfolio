@@ -6,6 +6,7 @@ import Fade from '@mui/material/Fade';
 import {IoMdClose} from 'react-icons/io'
 import Typography from '@mui/material/Typography';
 import "../Portfolio.css"
+import { a } from '@react-spring/web';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -78,13 +79,16 @@ export default function Modalex(props) {
 
             <Typography id="transition-modal-title" variant="h5" component="h5" sx={{ mt:4,mb:2 ,px:3}}>
              {props.Title}
+             
             </Typography>
 
 
             <Typography id="transition-modal-description" sx={{ mt: 1 ,height:140,px:3,textAlign:'justify'}}>
               {props.text}
+              {(props.link)? <p>Visit: &nbsp; <a href={props.link} target='_blank'> {props.link}</a></p>:""}
+              
             </Typography>
-            <div className='closeButtonBox' ><IoMdClose className='closeButton '  onClick={handleClose} size={30} color='gray'/></div>
+            
           </Box>
          
         </Fade>
